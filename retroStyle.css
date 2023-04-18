@@ -69,6 +69,9 @@ body{
 .GIFFloater{
     float: right;
 }
+.GIFFloaterLeft{
+    float: left;
+}
 
 /* Column Format */
 .column {
@@ -95,4 +98,7 @@ body{
 }
 .fontMedium{
     font-size: 20px;
+}
+.fontBig{
+    font-size: 40px;
 }
