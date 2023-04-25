@@ -1,104 +1,145 @@
 /* Setup */
 body{
     background-image: url("IMG/Starts.gif");
-    color: green;
+    color: rgb(3, 99, 16);
+    font-family: Arial;
+    word-wrap: break-word
 }
-.Enclosure{
-    width: 75%;
+.container{
     background-color: #0a0a0a;
-    margin: auto;
     width: 75%;
     padding: 10px;
+    margin:auto;
 }
 
-/* Title */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.body-grid-item{
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+.BlogSection{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(3, 99, 16);
+    color: #131313;
+}
+
+.MainFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Seta{
+    width: 50px;
+}
+.GIFHeader{
+    width: 50vw;
+    max-width: 150px;
+}
+
+
+@-webkit-keyframes rainbow {  
+0% { color: rgb(255, 0, 0); }
+28% { color: rgb(255, 125, 0); }
+42% { color: rgb(255, 255, 0); }
+56% { color: rgb(0, 255, 0); }
+70% { color: rgb(0, 255, 255); }
+84% { color: rgb(0, 0, 255); }
+100% { color: rgb(255, 0, 255); }
+}
+.RainbowText {
+    color: black;
+    -webkit-animation-name: rainbow;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3s; 
+} 
+
+
+/* Style Content */
+
+.DoubleBorder{
+    border: 4px solid rgb(3, 99, 16);
+    outline: 4px solid rgb(1, 67, 10);
+}
+.Text-Green{
+    color: rgb(3, 99, 16);
+}
+.Text-Black{
+    color: #131313;
+}
+hr{
+    border: 1px dashed  green;
+}
+.FlipIMG{
+    transform: rotateY(180deg);
+}
+.TextShadow{
+    text-shadow: 5px 2px 3px #1fb317;
+}
+.TextShadowSmall{
+    text-shadow: 2px 2px 1px #1fb317;
+}
+.TextJustify{
+    text-align: justify;
+}
+.TextCenter{
+    text-align: center;
+}
 .Title{
-    color: green;
-    text-shadow: 2px 2px 2px greenyellow;
-    font-size: 75px;
-    padding: 50px;
+    font-size: 69px;
 }
-
-/* Intro Section */
-.BodyText{
+.Bold{
+    font-weight: bold;
+}
+.T-5{
+    font-size: 55px;
+}
+.T-4{
+    font-size: 45px;
+}
+.T-3{
+    font-size: 35px;
+}
+.T-2{
     font-size: 25px;
 }
+.T-1{
+    font-size: 15px;
+}
 
-/* Link Section */
-.Links{
+.MLR-5{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.MT-5{
     margin-top: 25px;
 }
-.Link{
-    font-size: 20px;
-    color: green;
+.P-5{
+    padding: 15px;
 }
-
-/* Footer Section */
-.Footer{
-    margin-top: 200px;
+.WID-5{
+    width:50%;
 }
-
-/* GIFS Format */
-.GIFTop{
-    float: right;
-    margin-top: -220px;
+.WID-4{
+    width:40%;
 }
-.GIFW-100{
-    width:100%;
+.WID-3{
+    width:30%;
 }
-.GIFScary{
-    width:100%;
-    max-width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.WID-2{
+    width:20%;
 }
-.GIFFuny{
-    width:100%;
-    max-width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.GIFBase{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.GIFFloater{
-    float: right;
-}
-.GIFFloaterLeft{
-    float: left;
-}
-
-/* Column Format */
-.column {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-    margin-top: 10px;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Text Formatatiob */
-.SampleText{
-    font-size: 20px;
-}
-.centerTitle{
-    text-align: center;
-}
-.textShadow{
-    text-shadow: 1px 1px 1px greenyellow;
-}
-.fontMedium{
-    font-size: 20px;
-}
-.fontBig{
-    font-size: 40px;
+.WID-1{
+    width:10%;
 }
