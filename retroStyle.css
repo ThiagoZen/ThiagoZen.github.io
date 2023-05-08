@@ -18,19 +18,26 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .body-grid-item{
     display: grid;
-    grid-template-rows: repeat(3, 50px);
+    grid-auto-rows: 50px;
+    grid-gap: 1px;
 }
+.bodyHeader-grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 100px);
+}
+
 .BlogSection{
-    grid-column-start: 1;
-    grid-column-end: 4;
+    width: 100%;
     background-color: rgb(3, 99, 16);
-    color: #131313;
+    text-align: center;
 }
 
 .MainFooter{
@@ -64,11 +71,48 @@ body{
     -webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 3s; 
 } 
+
+@-webkit-keyframes flashy {  
+    0% { color: rgba(3, 99, 16,1); }
+    100% { color: rgba(3, 99, 16,0.5); }
+}
+.FlashyText {
+    color: black;
+    -webkit-animation-name: flashy;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 0.5s; 
+} 
+
+
+.Form{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.TypeInput{
+    height: 25px;
+    width: 100%;
+}
+.InputSubmit{
+    width: 150px;
+    height: 50px;
+    background-color: #1fb317;
+    color:aliceblue;
+    cursor: pointer;
+}
+
 .GIFScary{
     width:100%;
     max-width: 500px;
 }
-
+.TopicContent{
+    display: grid;
+    justify-items: center;
+}
 
 /* Style Content */
 
@@ -100,6 +144,9 @@ hr{
 .TextCenter{
     text-align: center;
 }
+.TextLeft{
+    text-align: left;
+}
 .Title{
     font-size: 69px;
 }
@@ -129,8 +176,15 @@ hr{
 .MT-5{
     margin-top: 25px;
 }
+.MB-5{
+    margin-bottom: 25px;
+}
 .P-5{
     padding: 15px;
+}
+.WID-100{
+    width:100%;
+    max-width: 1000px;
 }
 .WID-5{
     width:50%;
@@ -143,6 +197,8 @@ hr{
 }
 .WID-2{
     width:20%;
+    max-width: 500px;
+    min-width: 100px;
 }
 .WID-1{
     width:10%;
