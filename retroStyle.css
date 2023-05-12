@@ -5,6 +5,9 @@ body{
     font-family: Arial;
     word-wrap: break-word
 }
+li{
+    list-style:square;
+}
 .container{
     background-color: #0a0a0a;
     width: 75%;
@@ -35,7 +38,9 @@ body{
 }
 
 .BlogSection{
-    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;    
     background-color: rgb(3, 99, 16);
     text-align: center;
 }
@@ -138,6 +143,9 @@ hr{
 .TextShadowSmall{
     text-shadow: 2px 2px 1px #1fb317;
 }
+.TextShadowVerySmall{
+    text-shadow: 1.5px 1px 1px #1fb317;
+}
 .TextJustify{
     text-align: justify;
 }
@@ -154,19 +162,22 @@ hr{
     font-weight: bold;
 }
 .T-5{
-    font-size: 55px;
+    font-size: 53px;
 }
 .T-4{
-    font-size: 45px;
+    font-size: 43px;
 }
 .T-3{
-    font-size: 35px;
+    font-size: 34px;
 }
 .T-2{
-    font-size: 25px;
+    font-size: 24px;
 }
 .T-1{
     font-size: 15px;
+}
+.T-TEXT{
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
 .MLR-5{
