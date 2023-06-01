@@ -1,0 +1,94 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+p{
+    font-size: 25px;   
+}
+
+h1{
+    color: #0064b5;
+}
+
+h2{
+    color: #002050;
+}
+
+/* Introduction */
+.introduction{
+    display: flex;
+    justify-content:space-between;
+}
+.competencia{
+    font-size: 35px;
+    margin: 0;
+}
+.name{
+    margin: 0;
+    font-size: 70px;
+}
+.me{
+    width: 10vw;
+    min-width: 70px;
+    max-width: 150px;
+}
+.logoArea{
+    padding: 40px 0px 0px 0px;
+}
+.logo{
+    padding: 0px 10px 0px 0px;
+    width: 48px;
+}
+
+/* Competencias */
+.competencias{
+    display: flex;
+}
+.certificacoes{
+    width: 100px;
+}
+.linguagensSection img{
+    padding: 15px;
+    width: 50px;
+}
+.tecnologias{
+    padding: 15px;
+    width: 50px;
+}
+.tecnologiasSection{
+    text-align: center;
+}
+.tecnologiasSection div p{
+    font-size: 20px;
+    margin: 0px 0px 50px;
+}
+.tecnologiasSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Formacao academica */
+.formacaoSection{
+    padding: 0px 0px 0px 30px;
+}
+.formacaoText{
+    margin: 0px;
+}
+
+
+/* Idiomas */
+.idiomas{
+    padding: 0px 0px 0px 30px;
+}
+.slider{
+    padding: 15px;
+    width: 15vw;
+    min-width: 150px;
+    max-width: 500px;
+}
